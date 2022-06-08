@@ -1,0 +1,1 @@
+As pastas "quadros" e "tabelas" podem ser usadas caso prefira inserir o código dos quadros/tabelas em um arquivo separado

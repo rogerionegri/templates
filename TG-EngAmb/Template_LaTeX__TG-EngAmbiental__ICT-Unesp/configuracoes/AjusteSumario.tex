@@ -1,0 +1,55 @@
+%----------------------------------------------------
+% CORREÇÃO DO SUMÁRIO
+%----------------------------------------------------
+\usepackage{etoc}
+
+\etocsetstyle{chapter} 
+{}
+%{\addvspace{0.5ex}\setlength{\leftskip}{0.0cm}\noindent}
+{\addvspace{1.5ex}\setlength{\leftskip}{0.0cm}\noindent}
+{\llap{\makebox[0.4cm][l]{\bfseries\etocnumber}}\bfseries\etocname
+%  \hspace{0.15cm}\nobreak\dotfill\hspace{0.5cm}\etocpage\par}
+  \hspace{0.10cm}\nobreak\dotfill\hspace{0.5cm}\etocpage\par}
+{}
+\etocsetstyle{section}
+{}
+%{\addvspace{.5ex}\noindent\setlength{\leftskip}{1.5cm}\noindent}
+%{\llap{\makebox[1.5cm][l]{{\etocnumber}}}\etocname
+%  \hspace{10pt}\nobreak\dotfill\hspace{10pt}{\etocpage}\par}
+{\addvspace{.5ex}\noindent\setlength{\leftskip}{1.5cm}\noindent}
+{\llap{\makebox[1.5cm][l]{{}}}%\etocname
+  %\hspace{0pt}\nobreak\dotfill\hspace{0pt}{}\par
+}
+{}
+\etocsetstyle{subsection}
+{}
+{\addvspace{.5ex}\noindent\setlength{\leftskip}{1.5cm}\noindent}
+%{\llap{\makebox[1.5cm][l]{{\bfseries\etocnumber}}}\etocname
+{\llap{\makebox[1.5cm][l]{{}}}%\etocname
+%  \hspace{10pt}\nobreak\dotfill\hspace{10pt}{\etocpage}\par
+}
+{}
+\etocsettocstyle{\chapter*{\normalfont\bfseries SUMÁRIO}}{}
+\setcounter{tocdepth}{1}
+\setcounter{secnumdepth}{2}
+
+
+
+%----------------------------------------------------
+% CORREÇÃO DAS SECTIONS E SUBSECTIONS NO TEXTO
+%----------------------------------------------------
+% Finalmente, corrigi negrito nos numeros em chap e sect.
+\renewcommand{\chapnumfont}{\normalfont\bfseries} %ok
+%\renewcommand{\chaptitlefont}{\bfseries\normalfont}
+\renewcommand{\chaptitlefont}{\normalfont\bfseries}
+
+
+\let\oldsubsection=\subsection
+% Save the existing sectioning commands
+
+\renewcommand{\subsection}[1]{{%
+  \setsecnumformat{{\bfseries\thesubsection\quad}}%
+  \oldsubsection{#1}}} 
+  
+
+
