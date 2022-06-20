@@ -12,7 +12,7 @@ A vidis is duris pra quienis is moles \cite{AntonRorres2012}.
 %Quadro 1
 \begin{quadro}[H]
 
-\caption{Título do Quadro 1}\label{quad1}
+\caption{Título do primeiro quadro}\label{quad1}
 \centering
 \begin{tabular}{|C{0.125\textwidth} |C{0.125\textwidth} |C{0.125\textwidth} |C{0.125\textwidth} |C{0.125\textwidth} |C{0.125\textwidth} |}  %<--- veja definição em pacotes.tex
  \hline
@@ -43,7 +43,7 @@ A vidis is duris pra quienis is moles \cite{AntonRorres2012}.
 %Quadro 2
 \begin{quadro}[H]
 
-\caption{Título do Quadro 2}\label{quad2}
+\caption{Título do segundo quadro}\label{quad2}
 \centering
 \begin{tabular}{|C{0.1\textwidth} |C{0.1\textwidth} |C{0.1\textwidth} |C{0.1\textwidth} |C{0.1\textwidth} |C{0.1\textwidth} |C{0.1\textwidth} |C{0.1\textwidth} |}  %<--- veja definição em pacotes.tex
  \hline
@@ -70,7 +70,7 @@ A vidis is duris pra quienis is moles \cite{AntonRorres2012}.
 
 %------------------ Tabela 1
 \begin{table}[H]
-\caption{Título da Tabela 1}\label{tab1}
+\caption{Título da primeira tabela}\label{tab1}
 \centering
 \begin{tabular}{C{0.3\textwidth} C{0.3\textwidth} C{0.3\textwidth}}  %<--- veja definição em pacotes.tex
 \hline
@@ -95,7 +95,7 @@ A vidis is duris pra quienis is moles \cite{AntonRorres2012}.
 
 %------------------ Tabela 2
 \begin{table}[H]
-\caption{Título da Tabela 2}\label{tab2}
+\caption{Título da segunda tabela}\label{tab2}
 \centering
 \begin{tabular}{C{0.3\textwidth} C{0.3\textwidth} C{0.3\textwidth}}  %<--- veja definição em pacotes.tex
 \hline
@@ -109,4 +109,20 @@ A vidis is duris pra quienis is moles \cite{AntonRorres2012}.
 \fonte{Elaborado pelo autor.}
 \end{table}
 
+
+\lipsum[33]
+
+As Equações~\ref{eq1} e \ref{eq2} são exemplos de uso do ambiente \textit{equation} para inserção de objetos matemáticos. Não se esqueça que é possível inserir objetos matemáticos no modo \textit{in-line}, por exemplo, $\displaystyle e=\sum _{{n=0}}^{{\infty }}{\frac  {1}{n!}}$.
+
+
+%------------------ Equacão 1
+\begin{equation}\label{eq1}
+{\textrm{D}}_\textrm{B}(X,Y) &= N \left[\frac{\log|{\Sigma}_{X}|+\log|{\Sigma}_{Y}|}{2}-\log\left|\left(\frac{{\Sigma}_{X}^{-1}+{\Sigma}_{Y}^{-1}}{2}\right)^{-1}\right|\right]
+\end{equation}
+
+
+%------------------ Equacão 2
+\begin{equation}\label{eq2}
+F(\mathbf{x}) = \textrm{sgn} \left( \sum_{i=1}^{m} \alpha_i K(\mathbf{x},\mathbf{x}_{i}) - b \right)
+\end{equation}
 

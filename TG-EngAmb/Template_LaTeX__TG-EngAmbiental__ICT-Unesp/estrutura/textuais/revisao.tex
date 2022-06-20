@@ -10,7 +10,7 @@ Sed feugiat. Cum sociis natoque penatibus et magnis dis parturient montes, nasce
 
 
 %Inserir seu texto... (remova os comandos \lipsum[*], eles apenas inserem textos "defaul" de exemplo)
-\lipsum[5]
+%\lipsum[5]
 
 
 Suspendisse vel felis. Ut lorem lorem, interdum eu, tincidunt sit amet, laoreet vitae, arcu. Aenean faucibus pede eu ante. Praesent enim elit, rutrum at, molestie non, nonummy vel, nisl. Ut lectus eros, malesuada sit amet, fermentum eu, sodales cursus, magna. Donec eu purus. Quisque vehicula, urna sed ultricies auctor, pede lorem egestas dui, et convallis elit erat sed nulla. Donec luctus. Curabitur et nunc. Aliquam dolor odio, commodo pretium, ultricies non, pharetra in, velit. Integer arcu est, nonummy in, fermentum faucibus, egestas vel, odio \cite{AzevedoFernandes2015,BairdCann2011,BaptistaEA2014,BergmanEA2015}.
@@ -20,10 +20,14 @@ Suspendisse vel felis. Ut lorem lorem, interdum eu, tincidunt sit amet, laoreet 
 %------------------ Figura 1
 \begin{figure}[H]
 \centering
-\caption{O famoso leão desenhado por Duane Bibby, símbolo do \TeX}\label{fig1}
-\includegraphics[width=0.5\textwidth]{./dados/figuras/tex_lion.png}
-\fonte{\url{https://ctan.org/lion}}
+\caption{Título da primeira figura}\label{fig1}
+\includegraphics[width=0.5\textwidth]{./dados/figuras/exemplo_fig1.png}
+%\fonte{\url{https://ctan.org/lion}}
+\fonte{\citen[p. 66]{AntonBusby2006}}
 \end{figure}
+
+
+
 
 
 %Inserir seu texto...
@@ -42,7 +46,7 @@ Sed feugiat \citen{BielenkiBarbassa2012}, cum sociis natoque penatibus et magnis
 
 \section{Outra seção secundária}
 
-Vestibulum diam eros, fringilla et, consectetuer eu, nonummy id, sapien \cite{BoyceDiprima2015,CostaAndrade2022}.
+Vestibulum diam eros, fringilla et, consectetuer eu, nonummy id, sapien \cite{BoyceDiprima2015,CostaAndrade2022}. A Figura~\ref{fig2} ilustra o famoso leão desenhado por Duane Bibby, símbolo do \TeX.
 
 
 %Inserir seu texto...
@@ -52,10 +56,12 @@ Vestibulum diam eros, fringilla et, consectetuer eu, nonummy id, sapien \cite{Bo
 %------------------ Figura 2
 \begin{figure}[htb]
 \centering
-\caption{Diagrama}\label{fig2}
-\includegraphics[width=0.75\textwidth]{./dados/figuras/exemplo_fig2.png}
-\fonte{Disponível em \url{http://www.rdatoolkit.org/}.}
+%\caption{O famoso leão desenhado por Duane Bibby, símbolo do \TeX}\label{fig1}
+\caption{Título da segunda figura}\label{fig2}
+\includegraphics[width=0.5\textwidth]{./dados/figuras/tex_lion.png}
+\fonte{Disponível em \url{https://ctan.org/lion}}
 \end{figure}
+
 
 
 %Inserir seu texto...
